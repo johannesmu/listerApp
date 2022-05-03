@@ -8,7 +8,7 @@ export function Header( props ) {
                 <span className="sr-text">{props.siteName}</span>
             </a>
             {/* Navigation */}
-            
+            { props.nav }
         </header>
     )
 }

@@ -1,0 +1,10 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.nav a {
+    display: block;
+    padding: 0.7rem;
+    text-decoration: none;
+    color: inherit;
+}
