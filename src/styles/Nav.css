@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
 }
 
 .nav a {
@@ -8,4 +9,7 @@
   padding: 0.7rem;
   text-decoration: none;
   color: inherit;
+}
+.nav a:hover {
+  background-color: burlywood;
 }

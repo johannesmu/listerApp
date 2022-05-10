@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import logoimg from './assets/Logo-purple-star.svg'
 import { Header } from './components/Header'
 import { Nav } from './components/Nav';
+import { Logo } from './components/Logo'
 
 const MainNavItems = [
   { "name": "Home", "route": "/", "comp": "Home" },
@@ -11,7 +12,7 @@ const MainNavItems = [
 function App() {
   return (
     <div className="App">
-      <Header name="main" siteName="lister" nav={<Nav items={MainNavItems} navClass="main-nav" />} />
+      <Header logo={ <Logo tag="Lister" image={logoimg} size={100} url={"/"} /> } name="main"  nav={<Nav items={MainNavItems} navClass="main-nav" />} />
     </div>
   );
 }
