@@ -13,9 +13,9 @@ export function Nav(props) {
     }
   })
 
-  const NavContents = navItems.map((item) => {
+  const NavContents = navItems.map((item, key) => {
     return (
-      <a href={item.route}>{item.name}</a>
+      <a href={item.route} key={key}>{item.name}</a>
     )
   })
 

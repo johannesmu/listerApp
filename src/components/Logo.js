@@ -5,7 +5,7 @@ export function Logo(props) {
   if (props.url) {
     return (
       <Link className="logo" to={ props.url }>
-        <img className="logo-img" src={props.image} alt={props.tag} />
+        <img className="logo-img" src={props.image} alt={props.tag} width={ props.size } />
         <h1 className="logo-tag">{props.tag}</h1>
       </Link>
     )
@@ -13,7 +13,7 @@ export function Logo(props) {
   else {
     return (
       <div className="logo">
-        <img className="logo-img" src={props.image} alt={props.tag} />
+        <img className="logo-img" src={props.image} alt={props.tag} width={ props.size } />
         <h1 className="logo-tag">{props.tag}</h1>
       </div>
     )

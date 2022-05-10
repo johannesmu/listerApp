@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.3rem;
+  padding: 0.1rem;
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
 }
 .logo-img {
-  max-width: 60px;
+  max-width: 50px;
 }
