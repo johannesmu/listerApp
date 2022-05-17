@@ -5,7 +5,18 @@
   min-width: 30vw;
 }
 .search-input {
+  width: 100%;
+  padding: 0.5rem;
+  padding-right: 5ch;
+  border: solid transparent;
+  border-radius: 4px 0 0 4px;
+}
+.search-input:focus {
+  outline: 1px solid #cccccc;
+}
+.wrap {
   flex: 1;
+  position: relative;
 }
 
 .search-label {
@@ -17,4 +28,21 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
+}
+
+.reset {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+  transform: translateY(-50%);
+}
+
+.submit {
+  padding: 0.5rem;
+  border: solid transparent;
+  background-color: var(--secondary-light);
+  border-radius: 0 4px 4px 0;
 }

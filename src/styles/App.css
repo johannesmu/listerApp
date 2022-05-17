@@ -1,0 +1,35 @@
+:root {
+  --primary: hsla(39, 100%, 64%, 1);
+  --primary-light: hsla(39, 100%, 84%, 1);
+  --primary-mid: hsla(39, 100%, 54%, 1);
+  --primary-dark: hsla(39, 100%, 34%, 1);
+  --secondary: hsla(118, 39%, 66%, 1);
+  --secondary-light: hsla(118, 39%, 86%, 1);
+  --secondary-mid: hsla(118, 39%, 56%, 1);
+  --secondary-dark: hsla(118, 39%, 36%, 1);
+  --tertiary: hsla(176, 13%, 45%, 1);
+  --tertiary-light: hsla(176, 13%, 85%, 1);
+  --light: hsla(114, 88%, 94%, 1);
+  --dark: hsla(240, 5%, 36%, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.content {
+  margin: 1rem 1rem;
+}
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--light);
+}
