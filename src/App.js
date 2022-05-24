@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 
 import {Home} from './pages/Home'
 import { About } from './pages/About'
@@ -15,9 +15,9 @@ import { Logo } from './components/Logo'
 import './styles/App.css'
 
 const MainNavItems = [
-  { "name": "Home", "route": "/", "comp": "Home" },
-  { "name": "About", "route": "/about", "comp": "About" },
-  { "name": "Contact", "route": "/contact", "comp": "Contact" },
+  { "name": "Home", "route": "/", "title": "Home" },
+  { "name": "About", "route": "/about", "title": "About" },
+  { "name": "Contact", "route": "/contact", "title": "Contact" },
 ]
 
 const DataSource = "https://jsonplaceholder.typicode.com/posts"
@@ -26,7 +26,6 @@ function App() {
 
   const searchHandler = ( evt ) => {
     evt.preventDefault()
-    console.log( evt )
   }
 
   return (

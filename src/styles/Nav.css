@@ -10,6 +10,9 @@
   text-decoration: none;
   color: inherit;
 }
+.nav a.active {
+  text-decoration: underline;
+}
 .nav a:hover {
   background-color: burlywood;
 }

@@ -13,7 +13,6 @@ export function Home( props ) {
       .then( (res) => res.json() )
       .then( (jsondata) => {
         setPageData(jsondata)
-        console.log( jsondata )
       } )
     }
   })
@@ -27,6 +26,7 @@ export function Home( props ) {
         heading={item.title}
         content={item.title}
         id={item.id}
+        link="#"
        />
       )
     })
