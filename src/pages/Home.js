@@ -4,16 +4,15 @@ import {useState,useEffect} from 'react'
 import { Card } from '../components/Card'
 
 export function Home( props ) {
-  const[pageData, setPageData ] = useState([])
+  const[ pageData, setPageData ] = useState([])
 
 
   useEffect( () => {
-    if( pageData.length == 0 ) {
+    if( pageData.length === 0 ) {
       fetch( props.data )
       .then( (res) => res.json() )
       .then( (jsondata) => {
         setPageData(jsondata)
-        console.log( jsondata )
       } )
     }
   })

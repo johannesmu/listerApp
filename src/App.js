@@ -23,19 +23,17 @@ const MainNavItems = [
 const DataSource = "https://jsonplaceholder.typicode.com/posts"
 
 function App() {
-
   const searchHandler = ( evt ) => {
     evt.preventDefault()
-    console.log( evt )
   }
 
   return (
     <div className="App">
       <Header 
-      logo={ <Logo tag="Lister" image={logoimg} size={60} url={"/"} /> } 
-      name="main"  
-      nav={<Nav items={MainNavItems} navClass="main-nav" />} 
-      search={<Search id="nav-search" action={ searchHandler } />}
+        logo={ <Logo tag="Lister" image={logoimg} size={60} url={"/"} /> } 
+        name="main"  
+        nav={<Nav items={MainNavItems} navClass="main-nav" />} 
+        search={<Search id="nav-search" action={ searchHandler } />}
       />
       <Routes>
         <Route path="/" element={<Home data={ DataSource } />} />
