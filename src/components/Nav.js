@@ -1,5 +1,6 @@
 import '../styles/Nav.css'
 import { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 export function Nav(props) {
   const [navItems, setNavItems] = useState([])
@@ -8,14 +9,17 @@ export function Nav(props) {
     if (props.items) {
       setNavItems(props.items)
     }
-    else {
+  }, [props.items])
 
-    }
-  })
+  let loc = useLocation()
+
+  useEffect( () => {
+    console.log( loc )
+  }, [loc.key] )
 
   const NavContents = navItems.map((item, key) => {
     return (
-      <a href={item.route} key={key}>{item.name}</a>
+      <NavLink exact to={item.route} key={key} activeClassName="active">{item.name}</NavLink>
     )
   })
 
