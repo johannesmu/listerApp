@@ -14,7 +14,7 @@ export function Nav(props) {
   let loc = useLocation()
 
   useEffect( () => {
-    console.log( loc )
+    // console.log( loc )
   }, [loc.key] )
 
   const NavContents = navItems.map((item, key) => {

@@ -1,10 +1,11 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 import { Signin } from './pages/Signin'
 import { Signup } from './pages/Signup'
+import { Detail } from './pages/Detail'
 
 import logoimg from './assets/Logo-purple-star.svg'
 import { Header } from './components/Header'
@@ -49,6 +50,7 @@ function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/detail/:itemId" element={<Detail />} />
         </Routes>
       </main>
       <Footer nav={<Nav items={FooterNavItems} navClass="footer-nav" />} />
