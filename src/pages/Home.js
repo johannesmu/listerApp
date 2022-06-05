@@ -26,9 +26,9 @@ export function Home( props ) {
         key={key}
         image="https://picsum.photos/seed/picsum/450/300"
         heading={item.title}
-        content={item.title}
+        content={item.body}
         id={item.id}
-        link="#"
+        link={"/detail/"+item.id}
        />
       )
     })
